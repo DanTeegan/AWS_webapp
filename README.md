@@ -1,6 +1,8 @@
 # AWS Web App Task
 
-# AWS info
+# What is AWS?
+
+Amazon Web Services is a cloud computing platform that provides customers with a wide array of cloud services. We can define AWS (Amazon Web Services) as a secured cloud services platform that offers compute power, database storage, content delivery and various other functionalities.
 
 # New commands
 
