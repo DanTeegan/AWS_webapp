@@ -118,7 +118,10 @@ If successfull the ```server listening on port 3000```
 Once the connection has been succesful you should be able to access the webpage through your ipv4 address created using a E2 instance on AWS.
 
 ![prov1](images/proof1.png)
+The webpage is available through the e2 instances IP adress using the port 3000
+
 ![prov1](images/proof2.png)
+The second webpage is also available
 
 
 
