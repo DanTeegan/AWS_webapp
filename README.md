@@ -32,7 +32,7 @@ Allows us to rent infrastructure per second.
 ![E22](images/E22.png)
 #### Continue through the configuration of the E2 instance dependant on what is needed
 
-#### Once the E2 Instance has been created we can see a variety of information. I am after the ipv4 address located in the read
+#### Once the E2 Instance has been created we can see a variety of information. I am after the ipv4 address located in the red
 
 ![EC3](images/EC3.png)
 
@@ -100,7 +100,7 @@ This provisions file automates th installation, configuration and upgrading of N
 #### I will be using the scp command. but what is scp?
 Secure copy protocol (SCP) is a means of securely transferring computer files between a local host and a remote host or between two remote hosts. It is based on the Secure Shell (SSH) protocol. 
 
-To sync directorys from your OS to your VM use the following command:
+To sync directorys from your OS to your VM you mut know the VMs IP adress and the directory name of which you want to sync. use the following command:
 
 ``` scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.48.95.163:~/app/ ```
 
