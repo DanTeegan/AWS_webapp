@@ -1,6 +1,6 @@
 # Environments
 An environment in terms of programming is a location where we would deploy the code. There can be several different environments.
-- Development environment
+- Development environment - developers machine
 - Testing environment – using a virtual machine
 - Production environment – using a virtual machine
 
@@ -82,7 +82,7 @@ sudo su
 npm install
 
 ```
-This is the provisions.sh file. It allow for automation of the following:
+Provisions allow for the automation of the following:
 - Installing packages
 - Configuring files
 - Syncing files
@@ -90,7 +90,7 @@ This is the provisions.sh file. It allow for automation of the following:
 - Provisioning a machine
 - Environment variables
 
-Nginx, npm
+This provisions file automates th installation, configuration and upgrading of Nginx, npm, git, pm2 and nodejs
 
 
 
