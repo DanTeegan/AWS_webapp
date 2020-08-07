@@ -30,6 +30,7 @@ Allows us to rent infrastructure per second.
 
 #### Now we can select the VM we want to create. In my case I choose the Ubuntu machine as it was the closest to my testing environment
 ![E22](images/E22.png)
+#### Continue through the configuration of the E2 instance dependant on what is needed
 
 #### Once the E2 Instance has been created we can see a variety of information. I am after the ipv4 address located in the read
 
@@ -100,13 +101,15 @@ Nginx, npm
 Secure copy protocol (SCP) is a means of securely transferring computer files between a local host and a remote host or between two remote hosts. It is based on the Secure Shell (SSH) protocol. 
 
 To sync directorys from your OS to your VM use the following command:
+
 ``` scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.48.95.163:~/app/ ```
 
-
 Now we sync the environments directory as our ```provision.sh``` file is inside:
+
 ``` scp -i ~/.ssh/DevOpsStudents.pem -r environment/ ubuntu@52.48.95.163:~/env/ ```
 
 If an error occurs when trying to sinc use the following command:
+
 ``` scp -o "IdentitiesOnly yes" -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.48.95.163:~/app/ ```
 
 Once the provision and app directorys have been moved into the VM. inside the VM we can run ```node app.js```
