@@ -25,13 +25,14 @@ Allows us to rent infrastructure per second.
 
 # Creating a E2 instance
 
-Once on the AWS dashboard, click on services and then under computer select EC2
+#### Once on the AWS dashboard, click on services and then under computer select EC2
 ![E21](images/E21.png)
 
-Now we can select the VM we want to create. In my case I choose the Ubuntu machine as it was the closest to my testing environment
+#### Now we can select the VM we want to create. In my case I choose the Ubuntu machine as it was the closest to my testing environment
 ![E22](images/E22.png)
 
-Once the E2 Instance has been created we can see a variety of information. I am after the ipv4 address located in the read
+#### Once the E2 Instance has been created we can see a variety of information. I am after the ipv4 address located in the read
+
 ![EC3](images/EC3.png)
 
 
@@ -92,18 +93,25 @@ Nginx, npm
 
 
 
-# New commands
+# Commands for Syncing the OS and VM and entering the vm
 
-To sinc documents from your OS to your VM use the following command:
+
+#### I will be using the scp command. but what is scp?
+Secure copy protocol (SCP) is a means of securely transferring computer files between a local host and a remote host or between two remote hosts. It is based on the Secure Shell (SSH) protocol. 
+
+To sync directorys from your OS to your VM use the following command:
 ``` scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.48.95.163:~/app/ ```
 
-When creating the provision file in the environment folder I then used thw following command to sync:
+
+Now we sync the environments directory as our ```provision.sh``` file is inside:
 ``` scp -i ~/.ssh/DevOpsStudents.pem -r environment/ ubuntu@52.48.95.163:~/env/ ```
 
-If an error occurs when tryung to sinc use the following command:
+If an error occurs when trying to sinc use the following command:
 ``` scp -o "IdentitiesOnly yes" -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.48.95.163:~/app/ ```
 
-Once the provision and app directorys have been moved into the VMO
+Once the provision and app directorys have been moved into the VM. inside the VM we can run ```node app.js```
+
+If successfull the ```server listening on port 3000```
 Once the connection has been succesful you should be able to access the webpage through your ipv4 address created using a E2 instance on AWS.
 
 ![prov1](images/proof1.png)
