@@ -133,6 +133,7 @@ The webpage is available through the e2 instances IP adress using the port 3000
 The second webpage is also available
 
 # Adding security groups
+Security group is a firewall. It contains a list of IPs that are allowed to access the webpage.
 The app will only be working on the IP adress of the VM. To Allow access to other users we add security groups. Go into your instance and click actions > Networking > change security groups
 
 ![secgroup](images/secgroup.png)
