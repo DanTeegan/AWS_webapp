@@ -25,6 +25,17 @@ Allows us to rent infrastructure per second.
 
 # Creating a E2 instance
 
+Once on the AWS dashboard, click on services and then under computer select EC2
+![E21](images/E21.png)
+
+Now we can select the VM we want to create. In my case I choose the Ubuntu machine as it was the closest to my testing environment
+![E22](images/E22.png)
+
+Once the E2 Instance has been created we can see a variety of information. I am after the ipv4 address located in the read
+![EC3](images/EC3.png)
+
+
+
 # Provisioning
 
 ![prov1](images/prov1.png)
