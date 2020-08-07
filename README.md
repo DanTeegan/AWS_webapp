@@ -132,6 +132,15 @@ The webpage is available through the e2 instances IP adress using the port 3000
 
 The second webpage is also available
 
+# Adding security groups
+The app will only be working on the IP adress of the VM. To Allow access to other users we add security groups. Go into your instance and click actions > Networking > change security groups
+
+![secgroup](images/secgroup.png)
+
+Then select the security group you would like to add for access.
+
+![secgroup2](images/secgroup2.png)
+
 # Stopping the Instance
 
 ### Actions > Instance status > Stop
