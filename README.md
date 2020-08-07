@@ -100,6 +100,8 @@ This provisions file automates th installation, configuration and upgrading of N
 #### I will be using the scp command. but what is scp?
 Secure copy protocol (SCP) is a means of securely transferring computer files between a local host and a remote host or between two remote hosts. It is based on the Secure Shell (SSH) protocol. 
 
+### The below commands are typed into the OS
+
 To sync directorys from your OS to your VM you mut know the VMs IP adress and the directory name of which you want to sync. use the following command:
 
 ``` scp -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.48.95.163:~/app/ ```
@@ -125,6 +127,11 @@ The webpage is available through the e2 instances IP adress using the port 3000
 
 The second webpage is also available
 
+# Stopping the Instance
+
+### Actions > Instance status > Stop
+
+![EC4](images/EC3.png)
 
 
 
