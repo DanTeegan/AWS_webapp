@@ -131,7 +131,7 @@ The second webpage is also available
 
 ### Actions > Instance status > Stop
 
-![EC4](images/EC3.png)
+![EC4](images/EC4.png)
 
 
 
