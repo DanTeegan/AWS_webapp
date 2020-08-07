@@ -114,6 +114,11 @@ If an error occurs when trying to sinc use the following command:
 
 ``` scp -o "IdentitiesOnly yes" -i ~/.ssh/DevOpsStudents.pem -r app/ ubuntu@52.48.95.163:~/app/ ```
 
+Onced the correct directorys have been synced use the following command to enter the vm:
+
+``` ssh -i ~/.ssh/DevOpsStudents.pem ubuntu@52.48.95.163 ```
+
+
 Once the provision and app directorys have been moved into the VM. inside the VM we can run ```node app.js```
 
 If successfull the ```server listening on port 3000```
