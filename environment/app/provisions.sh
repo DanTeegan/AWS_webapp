@@ -41,7 +41,7 @@ sudo npm install pm2 -g
 
 
 # App set up
-export DB_HOST="mongodb://192.168.10.150:27017/posts"
+export DB_HOST="mongodb://52.208.188.187:27017/posts"
 cd /home/ubuntu/app
 sudo su
 npm install
