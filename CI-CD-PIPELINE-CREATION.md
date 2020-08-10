@@ -20,7 +20,7 @@
 ![ci2](images/ci2.png)
 
 #### 3) You must then enter in the configurations that you would like to use for this CI job. They will vary from job to job.
-[Click here to see the configuration of my CI Job](https://github.com/DanTeegan/AWS_webapp/blob/master/CI_config.pdf)
+#### [Click here to see the configuration of my CI Job](https://github.com/DanTeegan/AWS_webapp/blob/master/CI_config.pdf)
 
 #### 4) Next I tested the job by clicking build now. The jobs can be seen in the build history. Note, This configuration was set up so that when I push to github the build will automatically start.
 
@@ -62,3 +62,12 @@ EOF
 # Security groups
 
 #### Now both jobs have been tested and are working we must allow access to jenkins on AWS using security groups.
+
+#### As seen below I created a new inbound rule with a type of ssh, port 22 and used the IP address of the Jenkins server I was using.
+
+![sg1](images/sg1.png)
+
+
+#### Now when I revisit the IP address off my APP EC2 instance changes have automatically been pushed. This process used a CI/CD pipeline to automate the integration and deployment of files.
+
+![sg2](images/sg2.png)
