@@ -1,3 +1,7 @@
+## [Creating and linking 2 EC2 Instances (DB & APP) please click here](https://github.com/DanTeegan/AWS_webapp/blob/master/README2.md)
+
+## [Creating a CI/CD Pipeline please click here](https://github.com/DanTeegan/AWS_webapp/blob/master/CI-CD-PIPELINE-CREATION.md)
+
 # Environments
 An environment in terms of programming is a location where we would deploy the code. There can be several different environments.
 - Development environment - developers machine
