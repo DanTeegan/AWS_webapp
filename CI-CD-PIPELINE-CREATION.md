@@ -20,7 +20,15 @@
 ![ci2](images/ci2.png)
 
 #### 3) You must then enter in the configurations that you would like to use for this CI job. They will vary from job to job.
-#### [Click here to see the configuration of my CI Job](https://github.com/DanTeegan/AWS_webapp/blob/master/CI-CD Configuration/CI_config.pdf)
+
+## [Click here to see the configuration of my CI Job](https://github.com/DanTeegan/AWS_webapp/blob/master/CI-CD%20Configuration/CI_config.pdf)
+
+#### One import bit of code within the CI config is the execute shell commands.
+
+``` cd app
+npm install
+npm test
+ ```  
 
 #### 4) Next I tested the job by clicking build now. The jobs can be seen in the build history. Note, This configuration was set up so that when I push to github the build will automatically start.
 
@@ -35,7 +43,7 @@
 
 #### We start the same as creating a CI job. First on the dashboard click on new item and then enter the name. As this is the deployment job it is best practice to use deploy in the name. Again, this will be a freestyle project.
 
-#### [For the full configuration of the CD job please click here](https://github.com/DanTeegan/AWS_webapp/blob/master/CI-CD Configuration/CD_config.pdf)
+## [For the full configuration of the CD job please click here](https://github.com/DanTeegan/AWS_webapp/blob/master/CI-CD%20Configuration/CD_config.pdf)
 
 #### One import bit of code within the CD config is the execute shell commands. The SCP command syncs the files we choose into the VM.
 
