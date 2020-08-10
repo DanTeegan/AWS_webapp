@@ -1,4 +1,4 @@
-# Environments testing Jenkins
+# Environments TEST JENKINS
 An environment in terms of programming is a location where we would deploy the code. There can be several different environments.
 - Development environment - developers machine
 - Testing environment – using a virtual machine
