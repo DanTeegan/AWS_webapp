@@ -16,6 +16,20 @@ I then ssh into both the app and the DB VM. In the DB VM I ran the provision scr
  
 ```./provisions.sh```
 
+I encountered an error when trying to run the provisions file
+
+``` bin/bash^M: bad interpreter: No such file or directory ```
+
+To fix this issue I installed dos2unix
+
+``` sudo apt-get install dos2unix ```
+
+I then converted the provisions file using
+
+``` dos2unix provisions.sh ```
+
+This fixed the issue and allowed me to run the provisions script
+
 Inside the APP VM I created an environment variable using DB_HOST=mongodb://52.209.11.237:27017/posts (This is the IP address of the db instance)
 
 Then inside the DB VM I went to the root using cd and then entered into the etc directory by using
