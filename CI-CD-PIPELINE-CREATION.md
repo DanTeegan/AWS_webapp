@@ -11,16 +11,24 @@ Then I added the payload URL. In this case it is the Jenkins IP that we are usin
 
 # CI - Continuous Integration
 
-First, on the Jenkins dashboard, click on new item as seen below.
+1 ) First, on the Jenkins dashboard, click on new item as seen below.
 
 ![ci1](images/ci1.png)
 
-Then type in the item name and select the type of project. I will be using a Freestyle project.
+2) Then type in the item name and select the type of project. I will be using a Freestyle project.
 
 ![ci2](images/ci2.png)
 
+3) You must then enter in the configurations that you would like to use for this CI job. They will vary from job to job.
+[Click here to see the configuration of my CI Job](https://github.com/DanTeegan/AWS_webapp/blob/master/CI_config.pdf)
 
-You must then enter in the configurations that you would like to use for this CI job. They will vary from job to job. [Click here to see the configuration of my CI Job](https://github.com/DanTeegan/AWS_webapp/blob/master/CI_config.pdf)
+4) Next I tested the job by clicking build now. The jobs can be seen in the build history. Note, This configuration was set up so that when I push to github the build will automatically start.
+
+![ci3](images/ci3.png)
+
+5) The build succesfully passed! You can check this in the console. If any errors occur go back and check the configuration file
+
+![ci4](images/ci4.png)
 
 
 # CD – Continuous deployment
@@ -41,3 +49,16 @@ ssh -o "StrictHostKeyChecking=no" ubuntu@54.246.11.0 <<EOF
     pm2 start app.js
 EOF
 ```
+
+Once the configuration is set up, we can then test the job. Note the configuration of this job has been set so that once the CI job passes it automatically builds the CD job. However, for testing purposes we can click on build.
+
+![cd1](images/cd1.png)
+
+Once again to check the status of the build we can view the console output. We successfully passed the tests.
+
+![cd2](images/cd2.png)
+
+
+# Security groups
+
+Now both jobs have been tested and are working we must allow access to jenkins on AWS using security groups.
