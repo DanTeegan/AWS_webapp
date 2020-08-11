@@ -5,6 +5,7 @@ An environment in terms of programming is a location where we would deploy the c
 - Production environment – using a virtual machine
 
 
+111
 # What is AWS?
 
 Amazon Web Services is a cloud computing platform provides an array of cloud services. We can define AWS (Amazon Web Services) as a secured cloud services platform that offers:
